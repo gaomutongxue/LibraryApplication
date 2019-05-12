@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">LibraryApplication</string>
+    <string name="isFristLogin">isFristLogin</string>
+    <string name="title_activity_wel_come">WelComeActivity</string>
+    <string name="bookname">bookname</string>
+    <string-array name="book_page_title">
+        <item>排行榜</item>
+        <item>分类</item>
+        <item>推荐榜</item>
+        <item>暂时没想法</item>
+    </string-array>
+    <string name="have_not_logion">您还没有登入</string>
+    <string-array name="book_kinds">
+        <item>热血</item>
+        <item>文化</item>
+        <item>科学</item>
+        <item>技术</item>
+    </string-array>
+    <string-array name="book_type_theme">
+        <item>玄幻</item>
+        <item>冒险</item>
+    </string-array>
+    <string-array name="book_type_popularwith">
+        <item>青年</item>
+        <item>老头</item>
+    </string-array>
+    <string-array name="book_type_process">
+        <item>连载</item>
+        <item>完结</item>
+    </string-array>
+    <string-array name="book_type_location">
+        <item>中国</item>
+        <item>其他</item>
+    </string-array>
+    <string name="net_link_erro">网络连接异常</string>
+</resources>

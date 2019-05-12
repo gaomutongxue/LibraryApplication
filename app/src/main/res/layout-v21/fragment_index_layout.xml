@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/grey400transparent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <com.youth.banner.Banner
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" ></com.youth.banner.Banner>
+
+                <include layout="@layout/index_cycle_text"></include>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+                    <TextView
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="最新书籍"/>
+                    <Button
+                        android:drawableRight="@drawable/ic_arrow_left_black_48dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:text="更多"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+         <android.support.v7.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/rv_new_book">
+
+         </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp">
+                        <TextView
+                            android:background="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="公告"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list_notic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

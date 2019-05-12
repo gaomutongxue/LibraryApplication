@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:paddingHorizontal="@dimen/dp_10"
+                android:id="@+id/btnMan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="人气排行"
+                android:textColor="@drawable/selector_order_button"
+                android:button="@null"
+                android:checked="true"/>
+
+            <RadioButton
+                android:paddingHorizontal="@dimen/dp_10"
+                android:id="@+id/btnWoman"
+               android:textColor="@drawable/selector_order_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="借阅排行"/>
+        </RadioGroup>
+    </LinearLayout>
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_weight="1"
+        android:id="@+id/sv_rv_science"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_list_science"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:layout_weight="1"
+
+    >
+
+</android.support.v7.widget.RecyclerView>
+    </com.liaoinstan.springview.widget.SpringView>
+</LinearLayout>

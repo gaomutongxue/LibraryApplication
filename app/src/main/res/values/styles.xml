@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="CustomDialogShowTypeOne" parent="AlertDialog.AppCompat.Light">
+        <!--设置背景透明-->
+        <!--背景是否透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--是否没有标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮在window上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否背景模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置背景模糊的透明度-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="BottomDialog" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <!--<item name="android:windowAnimationStyle">@style/BottomToTopAnim</item>-->
+
+    </style>
+
+</resources>

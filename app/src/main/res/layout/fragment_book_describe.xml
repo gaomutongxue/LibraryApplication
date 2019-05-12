@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_book_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简介"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+    <TextView
+        android:text="这是一本啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        android:id="@+id/tv_book_describe"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+    <TextView
+        android:id="@+id/zuozhe_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="作者:"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+    <TextView
+        android:text="图书馆 3楼 政治分块 B793C09910书架"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tv_book_loctation"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="剩余库存：" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="已借：2本"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000" />
+    <TextView
+        android:id="@+id/kucun"
+        android:text="剩余："
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <Button
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:text="预约"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="24小时内有效"/>
+</LinearLayout>
+</ScrollView>

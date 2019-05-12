@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.user.UserActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/grey50transparent"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:collapsedTitleGravity="center"
+            app:title="doraemon"
+            app:expandedTitleGravity="center"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_collapseMode="parallax" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="bottom"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_left_black_48dp"
+                app:popupTheme="@style/PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/springview"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_person_data"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:text="xiaoxiaoxiaoxiaoxiao"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                        <Button
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:text="编辑个人"
+                            android:drawableRight="@drawable/ic_arrow_left_black_48dp"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+                        android:id="@+id/bt_user_lent"
+                        android:text="目前借阅的书籍"
+                        android:drawableRight="@drawable/ic_arrow_left_black_48dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+
+                        android:text="欠款处理"
+                        android:drawableRight="@drawable/ic_arrow_left_black_48dp"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                    <Button
+                        android:id="@+id/bt_guanliyuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+                        android:text="书籍管理"
+                        android:visibility="visible"
+                        android:drawableRight="@drawable/ic_arrow_left_black_48dp"/>
+                    <Button
+                        android:id="@+id/bt_lend"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+                        android:text="借阅管理"
+                        android:drawableRight="@drawable/ic_arrow_left_black_48dp"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </com.liaoinstan.springview.widget.SpringView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.manager.ManagerActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="书籍名称："
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="作者名字："
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etatuor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="书本类型："
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/ettype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="书本位置："
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="简介："
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+            <EditText
+                android:id="@+id/ettotle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:hint="从这里开始写"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black" />
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="添加"
+                android:textColor="@color/contact_default_txt_color"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btndel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="删除"
+                android:textColor="@color/contact_default_txt_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

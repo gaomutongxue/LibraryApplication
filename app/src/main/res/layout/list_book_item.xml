@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/ll_book_list"
+    android:gravity="center"
+    android:background="@drawable/selector_button_click"
+    android:orientation="vertical">
+ <ImageView
+     android:src="@mipmap/ic_launcher"
+    android:id="@+id/iv_list_book_image"
+    android:layout_width="80dp"
+    android:layout_height="100dp" />
+    <TextView
+        android:id="@+id/tv_list_book_name"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="@dimen/dp_10"
+        android:text="他改变了中国"/>
+
+</LinearLayout>

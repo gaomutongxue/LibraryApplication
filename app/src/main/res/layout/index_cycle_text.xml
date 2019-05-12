@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="40dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_home"/>
+    <ViewAnimator
+        android:id="@+id/animator_text"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/tv_animagtor_text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="今日活动"
+            android:textColor="#f0f"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_animagtor_text2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="书本大卖"
+            android:textColor="#f0f"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_animagtor_text3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="哈哈哈"
+            android:textColor="#f0f"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_animagtor_text4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="!!!!!"
+            android:textColor="#f0f"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_animagtor_text5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="hello,world"
+            android:textColor="#f0f"
+            android:textSize="20dp" />
+
+    </ViewAnimator>
+    <Button
+        android:id="@+id/bt_lern_more_news"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="详情"
+        />
+</LinearLayout>
